@@ -287,7 +287,7 @@ const App = () => {
 
     const ingredient_table = vderive(() => {
         return div(
-            h1("Effects Selection"),
+            h1("Ingredients Selection"),
             table({ id: 'ingredients' },
                 thead(
                     tr(th('Ingredient'), th({ title: 'Filters the Ingredients by effect' }, 'Effect Filter'), th('Effects (Name, Magnitude, Duration)'))
