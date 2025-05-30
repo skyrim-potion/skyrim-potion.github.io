@@ -1,0 +1,2144 @@
+{
+    "Abecean Longfin": {
+        "Weakness to Frost": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Weakness to Poison Oil": {
+            "magnitude": 5.0,
+            "duration": 30.0
+        },
+        "Fortify Restoration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Fortify Sneak": {
+            "magnitude": 4.0,
+            "duration": 600.0
+        }
+    },
+    "Aloe Vera Leaves": {
+        "Burning Oil": {
+            "magnitude": 3.0,
+            "duration": 0.0
+        },
+        "Restore Health": {
+            "magnitude": 0.5,
+            "duration": 20.0
+        },
+        "Restore Stamina": {
+            "magnitude": 0.5,
+            "duration": 20.0
+        },
+        "Invisibility": {
+            "magnitude": 0.0,
+            "duration": 4.0
+        }
+    },
+    "Ancestor Moth Wing": {
+        "Chilling Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Fortify Magicka": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Fortify Conjuration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Impairment": {
+            "magnitude": 2.25,
+            "duration": 20.0
+        }
+    },
+    "Ash Creep Cluster": {
+        "Chilling Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Fortify Destruction": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Resist Fire": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Invisibility": {
+            "magnitude": 0.0,
+            "duration": 5.0
+        }
+    },
+    "Ash Hopper Jelly": {
+        "Healing": {
+            "magnitude": 120.0,
+            "duration": 20.0
+        },
+        "Weakness to Frost": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Resist Shock": {
+            "magnitude": 4.0,
+            "duration": 60.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.6,
+            "duration": 180.0
+        }
+    },
+    "Ashen Grass Pod": {
+        "Weakness to Shock": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Resist Fire": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Fortify Sneak": {
+            "magnitude": 3.0,
+            "duration": 600.0
+        },
+        "Fortify Lockpicking": {
+            "magnitude": 0.4,
+            "duration": 30.0
+        }
+    },
+    "Bear Heart": {
+        "Frenzy": {
+            "magnitude": 13.0,
+            "duration": 10.0
+        },
+        "Fortify Unarmed": {
+            "magnitude": 5.0,
+            "duration": 180.0
+        },
+        "Fortify Health": {
+            "magnitude": 4.8,
+            "duration": 600.0
+        },
+        "Fortify Destruction": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Bee": {
+        "Weakness to Shock": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Gradual Restore Stamina": {
+            "magnitude": 19.0,
+            "duration": 4200.0
+        },
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 3.0
+        }
+    },
+    "Beehive Husk": {
+        "Constitution": {
+            "magnitude": 8.0,
+            "duration": 300.0
+        },
+        "Fortify Destruction": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Fortify Sneak": {
+            "magnitude": 3.0,
+            "duration": 600.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.0,
+            "duration": 180.0
+        }
+    },
+    "Bleeding Crown": {
+        "Weakness to Fire": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Weakness to Poison Oil": {
+            "magnitude": 6.0,
+            "duration": 30.0
+        },
+        "Fortify Block": {
+            "magnitude": 5.0,
+            "duration": 180.0
+        },
+        "Resist Magic": {
+            "magnitude": 2.8,
+            "duration": 180.0
+        }
+    },
+    "Blisterwort": {
+        "Healing": {
+            "magnitude": 120.0,
+            "duration": 10.0
+        },
+        "Gradual Restore Stamina": {
+            "magnitude": 16.0,
+            "duration": 4200.0
+        },
+        "Chilling Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Frenzy": {
+            "magnitude": 11.0,
+            "duration": 10.0
+        }
+    },
+    "Blue Butterfly Wing": {
+        "Chilling Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Fortify Illusion": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Fortify Conjuration": {
+            "magnitude": 3.0,
+            "duration": 60.0
+        },
+        "Impairment": {
+            "magnitude": 2.0,
+            "duration": 20.0
+        }
+    },
+    "Blue Dartwing": {
+        "Healing": {
+            "magnitude": 100.0,
+            "duration": 20.0
+        },
+        "Fear": {
+            "magnitude": 5.5,
+            "duration": 10.0
+        },
+        "Fortify Dexterity": {
+            "magnitude": 5.0,
+            "duration": 60.0
+        },
+        "Resist Shock": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Blue Glitterdust": {
+        "Chilling Oil": {
+            "magnitude": 24.25,
+            "duration": 15.0
+        },
+        "Constitution": {
+            "magnitude": 10.0,
+            "duration": 300.0
+        },
+        "Undying Breath": {
+            "magnitude": 4.0,
+            "duration": 300.0
+        },
+        "Cleansing": {
+            "magnitude": 1.0,
+            "duration": 0.0
+        }
+    },
+    "Blue Mountain Flower": {
+        "Healing": {
+            "magnitude": 100.0,
+            "duration": 20.0
+        },
+        "Fortify Conjuration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Fortify Health": {
+            "magnitude": 3.2,
+            "duration": 600.0
+        },
+        "Impairment": {
+            "magnitude": 1.75,
+            "duration": 20.0
+        }
+    },
+    "Boar Tusk": {
+        "Chilling Oil": {
+            "magnitude": 10.5,
+            "duration": 15.0
+        },
+        "Fortify Stamina": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Fortify Block": {
+            "magnitude": 5.0,
+            "duration": 180.0
+        },
+        "Fortify Health": {
+            "magnitude": 4.8,
+            "duration": 600.0
+        }
+    },
+    "Bone Meal": {
+        "Fortify Conjuration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Resist Fire": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 3.0
+        },
+        "Soul Trap": {
+            "magnitude": 0.0,
+            "duration": 3.0
+        }
+    },
+    "Briar Heart": {
+        "Magicka": {
+            "magnitude": 51.0,
+            "duration": 15.0
+        },
+        "Fortify Magicka": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Fortify Block": {
+            "magnitude": 6.0,
+            "duration": 180.0
+        },
+        "Paralysis": {
+            "magnitude": 0.0,
+            "duration": 1.0
+        }
+    },
+    "Burnt Spriggan Wood": {
+        "Tardiness": {
+            "magnitude": 50.0,
+            "duration": 5.0
+        },
+        "Weakness to Fire": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Fortify Alteration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Impairment": {
+            "magnitude": 2.25,
+            "duration": 20.0
+        }
+    },
+    "Butterfly Wing": {
+        "Healing": {
+            "magnitude": 100.0,
+            "duration": 20.0
+        },
+        "Arcane Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Burning Oil": {
+            "magnitude": 10.5,
+            "duration": 10.0
+        },
+        "Fortify Barter": {
+            "magnitude": 2.0,
+            "duration": 30.0
+        }
+    },
+    "Canis Root": {
+        "Chilling Oil": {
+            "magnitude": 20.75,
+            "duration": 15.0
+        },
+        "Damage Health": {
+            "magnitude": 18.0,
+            "duration": 1.0
+        },
+        "Fortify Marksman": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        },
+        "Fortify One - Handed": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        }
+    },
+    "Charred Skeever Hide": {
+        "Healing": {
+            "magnitude": 100.0,
+            "duration": 20.0
+        },
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Constitution": {
+            "magnitude": 8.0,
+            "duration": 300.0
+        },
+        "Undying Breath": {
+            "magnitude": 4.0,
+            "duration": 75.0
+        }
+    },
+    "Chaurus Eggs": {
+        "Burning Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Fortify Stamina": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Weakness to Poison Oil": {
+            "magnitude": 5.0,
+            "duration": 30.0
+        },
+        "Invisibility": {
+            "magnitude": 0.0,
+            "duration": 6.0
+        }
+    },
+    "Chicken's Egg": {
+        "Arcane Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Resist Magic": {
+            "magnitude": 3.2,
+            "duration": 180.0
+        },
+        "Undying Breath": {
+            "magnitude": 4.0,
+            "duration": 60.0
+        },
+        "Impairment": {
+            "magnitude": 1.75,
+            "duration": 20.0
+        }
+    },
+    "Claws": {
+        "Gradual Restore Stamina": {
+            "magnitude": 16.0,
+            "duration": 4200.0
+        },
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.0,
+            "duration": 180.0
+        },
+        "Impairment": {
+            "magnitude": 1.75,
+            "duration": 20.0
+        }
+    },
+    "Creep Cluster": {
+        "Magicka": {
+            "magnitude": 40.0,
+            "duration": 15.0
+        },
+        "Magic Weakness Oil": {
+            "magnitude": 16.0,
+            "duration": 10.0
+        },
+        "Vulnerability": {
+            "magnitude": 12.0,
+            "duration": 30.0
+        },
+        "Fortify Carry Weight": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        }
+    },
+    "Crimson Nirnroot": {
+        "Chilling Oil": {
+            "magnitude": 20.75,
+            "duration": 15.0
+        },
+        "Damage Health": {
+            "magnitude": 17.5,
+            "duration": 1.0
+        },
+        "Resist Magic": {
+            "magnitude": 3.2,
+            "duration": 180.0
+        },
+        "Invisibility": {
+            "magnitude": 0.0,
+            "duration": 17.0
+        }
+    },
+    "Cyrodilic Spadetail": {
+        "Chilling Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Damage Maximum Health": {
+            "magnitude": 10.0,
+            "duration": 30.0
+        },
+        "Fear": {
+            "magnitude": 5.5,
+            "duration": 10.0
+        },
+        "Fortify Restoration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Daedra Heart": {
+        "Magicka": {
+            "magnitude": 15000.0,
+            "duration": 2.0
+        },
+        "Healing": {
+            "magnitude": 10000.0,
+            "duration": 1.0
+        },
+        "Recuperation": {
+            "magnitude": 10000.0,
+            "duration": 1.0
+        },
+        "Lingering Damage Health": {
+            "magnitude": 18.0,
+            "duration": 30.0
+        }
+    },
+    "Deathbell": {
+        "Tardiness": {
+            "magnitude": 50.0,
+            "duration": 5.0
+        },
+        "Damage Health": {
+            "magnitude": 12.0,
+            "duration": 1.0
+        },
+        "Weakness to Poison Oil": {
+            "magnitude": 5.0,
+            "duration": 30.0
+        },
+        "Soul Trap": {
+            "magnitude": 0.0,
+            "duration": 4.0
+        }
+    },
+    "Dragon's Tongue": {
+        "Fortify Illusion": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Resist Fire": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Fortify Two-Handed": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        },
+        "Fortify Barter": {
+            "magnitude": 2.0,
+            "duration": 60.0
+        }
+    },
+    "Dwarven Oil": {
+        "Magicka": {
+            "magnitude": 45.0,
+            "duration": 15.0
+        },
+        "Magic Weakness Oil": {
+            "magnitude": 16.0,
+            "duration": 10.0
+        },
+        "Gradual Regenerate Magicka": {
+            "magnitude": 6.0,
+            "duration": 4200.0
+        },
+        "Fortify Illusion": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Ectoplasm": {
+        "Magicka": {
+            "magnitude": 49.0,
+            "duration": 15.0
+        },
+        "Damage Health": {
+            "magnitude": 12.0,
+            "duration": 1.0
+        },
+        "Fortify Magicka": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Fortify Destruction": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Elves Ear": {
+        "Magicka": {
+            "magnitude": 40.0,
+            "duration": 15.0
+        },
+        "Weakness to Frost": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Resist Fire": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Fortify Marksman": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        }
+    },
+    "Emperor Parasol Moss": {
+        "Damage Health": {
+            "magnitude": 10.0,
+            "duration": 1.0
+        },
+        "Gradual Restore Health": {
+            "magnitude": 7.0,
+            "duration": 4200.0
+        },
+        "Gradual Regenerate Magicka": {
+            "magnitude": 5.0,
+            "duration": 4200.0
+        },
+        "Fortify Two - Handed": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        }
+    },
+    "Falmer Ear": {
+        "Damage Health": {
+            "magnitude": 12.0,
+            "duration": 1.0
+        },
+        "Frenzy": {
+            "magnitude": 11.0,
+            "duration": 10.0
+        },
+        "Constitution": {
+            "magnitude": 8.0,
+            "duration": 300.0
+        },
+        "Fortify Lockpicking": {
+            "magnitude": 0.26,
+            "duration": 30.0
+        }
+    },
+    "Felsaad Osprey Feathers": {
+        "Healing": {
+            "magnitude": 125.0,
+            "duration": 20.0
+        },
+        "Constitution": {
+            "magnitude": 8.0,
+            "duration": 300.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.6,
+            "duration": 180.0
+        },
+        "Resist Magic": {
+            "magnitude": 3.2,
+            "duration": 180.0
+        }
+    },
+    "Fire Salts": {
+        "Magicka": {
+            "magnitude": 52.0,
+            "duration": 15.0
+        },
+        "Weakness to Frost": {
+            "magnitude": 30.0,
+            "duration": 10.0
+        },
+        "Gradual Regenerate Magicka": {
+            "magnitude": 6.0,
+            "duration": 4200.0
+        },
+        "Resist Fire": {
+            "magnitude": 4.8,
+            "duration": 300.0
+        }
+    },
+    "Fly Amanita": {
+        "Gradual Restore Stamina": {
+            "magnitude": 16.0,
+            "duration": 4200.0
+        },
+        "Frenzy": {
+            "magnitude": 11.0,
+            "duration": 10.0
+        },
+        "Resist Fire": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Fortify Two - Handed": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        }
+    },
+    "Frost Mirriam": {
+        "Etiolating Oil": {
+            "magnitude": 18.0,
+            "duration": 30.0
+        },
+        "Vulnerability": {
+            "magnitude": 12.0,
+            "duration": 30.0
+        },
+        "Fortify Sneak": {
+            "magnitude": 4.0,
+            "duration": 600.0
+        },
+        "Resist Frost": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        }
+    },
+    "Frost Salts": {
+        "Magicka": {
+            "magnitude": 52.5,
+            "duration": 15.0
+        },
+        "Weakness to Fire": {
+            "magnitude": 30.0,
+            "duration": 10.0
+        },
+        "Resist Frost": {
+            "magnitude": 4.8,
+            "duration": 300.0
+        },
+        "Fortify Conjuration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Garlic": {
+        "Constitution": {
+            "magnitude": 8.0,
+            "duration": 300.0
+        },
+        "Gradual Regenerate Magicka": {
+            "magnitude": 8.0,
+            "duration": 4200.0
+        },
+        "Fortify Stamina": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Gradual Restore Health": {
+            "magnitude": 6.0,
+            "duration": 4200.0
+        }
+    },
+    "Giant Lichen": {
+        "Magicka": {
+            "magnitude": 40.0,
+            "duration": 15.0
+        },
+        "Weakness to Shock": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Damage Maximum Health": {
+            "magnitude": 8.0,
+            "duration": 30.0
+        },
+        "Weakness to Poison Oil": {
+            "magnitude": 4.0,
+            "duration": 30.0
+        }
+    },
+    "Giant's Toe": {
+        "Chilling Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Vulnerability": {
+            "magnitude": 12.0,
+            "duration": 30.0
+        },
+        "Fortify Carry Weight": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        },
+        "Fortify Health": {
+            "magnitude": 4.8,
+            "duration": 600.0
+        }
+    },
+    "Gleambossom": {
+        "Gradual Restore Health": {
+            "magnitude": 7.0,
+            "duration": 4200.0
+        },
+        "Fear": {
+            "magnitude": 5.5,
+            "duration": 10.0
+        },
+        "Resist Magic": {
+            "magnitude": 3.2,
+            "duration": 180.0
+        },
+        "Paralysis": {
+            "magnitude": 0.0,
+            "duration": 1.0
+        }
+    },
+    "Glow Dust": {
+        "Burning Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Resist Shock": {
+            "magnitude": 4.8,
+            "duration": 180.0
+        },
+        "Fortify Destruction": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Impairment": {
+            "magnitude": 2.25,
+            "duration": 20.0
+        }
+    },
+    "Glowing Mushroom": {
+        "Fortify Stamina": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Fortify Health": {
+            "magnitude": 4.8,
+            "duration": 600.0
+        },
+        "Fortify Destruction": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Resist Shock": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        }
+    },
+    "Grass Pod": {
+        "Magicka": {
+            "magnitude": 40.0,
+            "duration": 15.0
+        },
+        "Etiolating Oil": {
+            "magnitude": 13.5,
+            "duration": 30.0
+        },
+        "Constitution": {
+            "magnitude": 5.0,
+            "duration": 300.0
+        },
+        "Fortify Alteration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Hagraven Claw": {
+        "Shocking Oil": {
+            "magnitude": 20.75,
+            "duration": 15.0
+        },
+        "Fortify Illusion": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Resist Magic": {
+            "magnitude": 2.8,
+            "duration": 180.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 5.0
+        }
+    },
+    "Hagraven Feathers": {
+        "Weakness to Shock": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Burning Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Frenzy": {
+            "magnitude": 11.0,
+            "duration": 10.0
+        },
+        "Fortify Conjuration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Hanging Moss": {
+        "Burning Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Fortify Health": {
+            "magnitude": 4.8,
+            "duration": 600.0
+        },
+        "Fortify One - Handed": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        },
+        "Impairment": {
+            "magnitude": 2.0,
+            "duration": 20.0
+        }
+    },
+    "Hawk Beak": {
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Fortify Carry Weight": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        },
+        "Resist Shock": {
+            "magnitude": 5.0,
+            "duration": 240.0
+        },
+        "Resist Frost": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        }
+    },
+    "Hawk Feathers": {
+        "Cleansing": {
+            "magnitude": 100.0,
+            "duration": 0.0
+        },
+        "Fortify Sneak": {
+            "magnitude": 4.0,
+            "duration": 600.0
+        },
+        "Fortify One - Handed": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.0,
+            "duration": 180.0
+        }
+    },
+    "Hawk's Egg": {
+        "Arcane Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Undying Breath": {
+            "magnitude": 4.0,
+            "duration": 60.0
+        },
+        "Resist Magic": {
+            "magnitude": 3.2,
+            "duration": 180.0
+        },
+        "Impairment": {
+            "magnitude": 2.0,
+            "duration": 20.0
+        }
+    },
+    "Heart": {
+        "Damage Health": {
+            "magnitude": 14.0,
+            "duration": 1.0
+        },
+        "Frenzy": {
+            "magnitude": 13.0,
+            "duration": 10.0
+        },
+        "Burning Oil": {
+            "magnitude": 10.5,
+            "duration": 15.0
+        },
+        "Impairment": {
+            "magnitude": 2.25,
+            "duration": 20.0
+        }
+    },
+    "Histcarp": {
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Vulnerability": {
+            "magnitude": 12.0,
+            "duration": 30.0
+        },
+        "Fortify Magicka": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Undying Breath": {
+            "magnitude": 4.0,
+            "duration": 75.0
+        }
+    },
+    "Honeycomb": {
+        "Recuperation": {
+            "magnitude": 20.0,
+            "duration": 30.0
+        },
+        "Fortify Block": {
+            "magnitude": 5.0,
+            "duration": 180.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.0,
+            "duration": 180.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 2.0
+        }
+    },
+    "Horker Fat": {
+        "Etiolating Oil": {
+            "magnitude": 15.0,
+            "duration": 30.0
+        },
+        "Arcane Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Undying Breath": {
+            "magnitude": 4.0,
+            "duration": 60.0
+        },
+        "Fortify Marksman": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        }
+    },
+    "Human Flesh": {
+        "Magicka": {
+            "magnitude": 51.0,
+            "duration": 15.0
+        },
+        "Damage Health": {
+            "magnitude": 12.0,
+            "duration": 1.0
+        },
+        "Fortify Sneak": {
+            "magnitude": 5.0,
+            "duration": 600.0
+        },
+        "Paralysis": {
+            "magnitude": 0.0,
+            "duration": 1.0
+        }
+    },
+    "Ice Wraith Teeth": {
+        "Weakness to Fire": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Weakness to Frost": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Invisibility": {
+            "magnitude": 0.0,
+            "duration": 5.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 3.0
+        }
+    },
+    "Imp Stool": {
+        "Healing": {
+            "magnitude": 100.0,
+            "duration": 20.0
+        },
+        "Damage Health": {
+            "magnitude": 10.0,
+            "duration": 1.0
+        },
+        "Fortify Carry Weight": {
+            "magnitude": 5.0,
+            "duration": 60.0
+        },
+        "Lingering Damage Health": {
+            "magnitude": 2.0,
+            "duration": 30.0
+        }
+    },
+    "Jarrin Root": {
+        "Damage Health": {
+            "magnitude": 750.0,
+            "duration": 1.0
+        },
+        "Burning Oil": {
+            "magnitude": 115.0,
+            "duration": 15.0
+        },
+        "Chilling Oil": {
+            "magnitude": 115.0,
+            "duration": 15.0
+        },
+        "Impairment": {
+            "magnitude": 5.0,
+            "duration": 20.0
+        }
+    },
+    "Jazbay Grapes": {
+        "Magic Weakness Oil": {
+            "magnitude": 16.0,
+            "duration": 10.0
+        },
+        "Damage Maximum Health": {
+            "magnitude": 10.0,
+            "duration": 30.0
+        },
+        "Fortify Magicka": {
+            "magnitude": 5.6,
+            "duration": 600.0
+        },
+        "Gradual Regenerate Magicka": {
+            "magnitude": 5.0,
+            "duration": 4200.0
+        }
+    },
+    "Juniper Berries": {
+        "Vulnerability": {
+            "magnitude": 12.0,
+            "duration": 30.0
+        },
+        "Weakness to Fire": {
+            "magnitude": 10.0,
+            "duration": 10.0
+        },
+        "Gradual Restore Health": {
+            "magnitude": 6.0,
+            "duration": 4200.0
+        },
+        "Fortify Marksman": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        }
+    },
+    "Large Antlers": {
+        "Tardiness": {
+            "magnitude": 50.0,
+            "duration": 5.0
+        },
+        "Recuperation": {
+            "magnitude": 20.0,
+            "duration": 30.0
+        },
+        "Fortify Stamina": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Fortify Unarmed": {
+            "magnitude": 5.0,
+            "duration": 180.0
+        }
+    },
+    "Lavender": {
+        "Etiolating Oil": {
+            "magnitude": 13.5,
+            "duration": 30.0
+        },
+        "Fortify Stamina": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Fortify Conjuration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Resist Magic": {
+            "magnitude": 2.8,
+            "duration": 180.0
+        }
+    },
+    "Luna Moth Wing": {
+        "Burning Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Gradual Restore Health": {
+            "magnitude": 7.0,
+            "duration": 4200.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.0,
+            "duration": 180.0
+        },
+        "Invisibility": {
+            "magnitude": 0.0,
+            "duration": 5.0
+        }
+    },
+    "Mammoth Hearth": {
+        "Fortify Carry Weight": {
+            "magnitude": 12.0,
+            "duration": 600.0
+        },
+        "Fortify Stamina": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        },
+        "Fortify Health": {
+            "magnitude": 5.4,
+            "duration": 600.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Moon Sugar": {
+        "Magicka": {
+            "magnitude": 57.0,
+            "duration": 15.0
+        },
+        "Weakness to Fire": {
+            "magnitude": 12.0,
+            "duration": 10.0
+        },
+        "Gradual Regenerate Magicka": {
+            "magnitude": 6.0,
+            "duration": 4200.0
+        },
+        "Resist Frost": {
+            "magnitude": 4.8,
+            "duration": 180.0
+        }
+    },
+    "Mora Tapinella": {
+        "Magicka": {
+            "magnitude": 45.0,
+            "duration": 15.0
+        },
+        "Gradual Restore Stamina": {
+            "magnitude": 16.0,
+            "duration": 4200.0
+        },
+        "Fortify Illusion": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Lingering Damage Health": {
+            "magnitude": 2.0,
+            "duration": 30.0
+        }
+    },
+    "Mudcrab Chitin": {
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Constitution": {
+            "magnitude": 8.0,
+            "duration": 300.0
+        },
+        "Resist Shock": {
+            "magnitude": 4.0,
+            "duration": 60.0
+        },
+        "Resist Fire": {
+            "magnitude": 4.0,
+            "duration": 60.0
+        }
+    },
+    "Namira's Rot": {
+        "Burning Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Gradual Restore Health": {
+            "magnitude": 6.0,
+            "duration": 4200.0
+        },
+        "Fear": {
+            "magnitude": 5.5,
+            "duration": 10.0
+        },
+        "Fortify Lockpicking": {
+            "magnitude": 0.4,
+            "duration": 30.0
+        }
+    },
+    "Netch Jelly": {
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Damage Health": {
+            "magnitude": 15.0,
+            "duration": 1.0
+        },
+        "Fortify Carry Weight": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        },
+        "Fear": {
+            "magnitude": 7.0,
+            "duration": 10.0
+        }
+    },
+    "Nightshade": {
+        "Arcane Oil": {
+            "magnitude": 21.0,
+            "duration": 15.0
+        },
+        "Damage Health": {
+            "magnitude": 10.0,
+            "duration": 1.0
+        },
+        "Fortify Destruction": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Impairment": {
+            "magnitude": 1.75,
+            "duration": 20.0
+        }
+    },
+    "Nirnroot": {
+        "Chilling Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Damage Health": {
+            "magnitude": 15.0,
+            "duration": 0.0
+        },
+        "Resist Magic": {
+            "magnitude": 3.2,
+            "duration": 180.0
+        },
+        "Invisibility": {
+            "magnitude": 0.0,
+            "duration": 10.0
+        }
+    },
+    "Nordic Barnacle": {
+        "Burning Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Gradual Restore Health": {
+            "magnitude": 7.0,
+            "duration": 4200.0
+        },
+        "Fortify Dexterity": {
+            "magnitude": 5.0,
+            "duration": 60.0
+        },
+        "Undying Breath": {
+            "magnitude": 4.0,
+            "duration": 60.0
+        }
+    },
+    "Orange Dartwing": {
+        "Etiolating Oil": {
+            "magnitude": 18.0,
+            "duration": 30.0
+        },
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Fortify Dexterity": {
+            "magnitude": 5.0,
+            "duration": 60.0
+        },
+        "Lingering Damage Health": {
+            "magnitude": 2.0,
+            "duration": 30.0
+        }
+    },
+    "Pearl": {
+        "Magicka": {
+            "magnitude": 43.0,
+            "duration": 15.0
+        },
+        "Recuperation": {
+            "magnitude": 20.0,
+            "duration": 30.0
+        },
+        "Fortify Block": {
+            "magnitude": 5.0,
+            "duration": 180.0
+        },
+        "Resist Shock": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        }
+    },
+    "Pine Thrush Egg": {
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Weakness to Poison Oil": {
+            "magnitude": 6.0,
+            "duration": 30.0
+        },
+        "Resist Shock": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Fortify Lockpicking": {
+            "magnitude": 0.42,
+            "duration": 30.0
+        }
+    },
+    "Poisonous Bloom": {
+        "Tardiness": {
+            "magnitude": 50.0,
+            "duration": 5.0
+        },
+        "Damage Health": {
+            "magnitude": 14.0,
+            "duration": 1.0
+        },
+        "Fortify Carry Weight": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        },
+        "Fear": {
+            "magnitude": 7.0,
+            "duration": 10.0
+        }
+    },
+    "Powdered Mammoth Tusk": {
+        "Recuperation": {
+            "magnitude": 20.0,
+            "duration": 30.0
+        },
+        "Fear": {
+            "magnitude": 7.0,
+            "duration": 10.0
+        },
+        "Fortify Unarmed": {
+            "magnitude": 5.0,
+            "duration": 180.0
+        },
+        "Fortify Sneak": {
+            "magnitude": 3.0,
+            "duration": 600.0
+        }
+    },
+    "Purple Mountain Flower": {
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Shocking Oil": {
+            "magnitude": 10.5,
+            "duration": 15.0
+        },
+        "Resist Frost": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Fortify Sneak": {
+            "magnitude": 3.0,
+            "duration": 600.0
+        }
+    },
+    "Red Glitterdust": {
+        "Magicka": {
+            "magnitude": 54.0,
+            "duration": 15.0
+        },
+        "Chilling Oil": {
+            "magnitude": 24.25,
+            "duration": 15.0
+        },
+        "Damage Health": {
+            "magnitude": 18.0,
+            "duration": 0.0
+        },
+        "Fortify Carry Weight": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        }
+    },
+    "Red Mountain Flower": {
+        "Magicka": {
+            "magnitude": 40.0,
+            "duration": 15.0
+        },
+        "Etiolating Oil": {
+            "magnitude": 13.5,
+            "duration": 30.0
+        },
+        "Damage Health": {
+            "magnitude": 7.0,
+            "duration": 1.0
+        },
+        "Fortify Magicka": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        }
+    },
+    "River Betty": {
+        "Tardiness": {
+            "magnitude": 50.0,
+            "duration": 5.0
+        },
+        "Damage Health": {
+            "magnitude": 12.0,
+            "duration": 0.0
+        },
+        "Fortify Carry Weight": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        },
+        "Fortify Alteration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Rock Warbler Egg": {
+        "Healing": {
+            "magnitude": 100.0,
+            "duration": 20.0
+        },
+        "Magic Weakness Oil": {
+            "magnitude": 16.0,
+            "duration": 10.0
+        },
+        "Chilling Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Fortify One - Handed": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        }
+    },
+    "Sabre Cat Eye": {
+        "Healing": {
+            "magnitude": 100.0,
+            "duration": 20.0
+        },
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Burning Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Damage Maximum Health": {
+            "magnitude": 8.0,
+            "duration": 30.0
+        }
+    },
+    "Sabre Cat Heart": {
+        "Shocking Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Damage Maximum Health": {
+            "magnitude": 8.0,
+            "duration": 30.0
+        },
+        "Impairment": {
+            "magnitude": 2.25,
+            "duration": 20.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 4.0
+        }
+    },
+    "Sabre Cat Tooth": {
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Fortify Stamina": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Weakness to Poison Oil": {
+            "magnitude": 6.0,
+            "duration": 30.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.0,
+            "duration": 180.0
+        }
+    },
+    "Salmon Roe": {
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Fortify Magicka": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Gradual Regenerate Magicka": {
+            "magnitude": 5.0,
+            "duration": 4200.0
+        },
+        "Undying Breath": {
+            "magnitude": 4.0,
+            "duration": 75.0
+        }
+    },
+    "Salt Pile": {
+        "Tardiness": {
+            "magnitude": 50.0,
+            "duration": 5.0
+        },
+        "Magic Weakness Oil": {
+            "magnitude": 16.0,
+            "duration": 10.0
+        },
+        "Gradual Regenerate Magicka": {
+            "magnitude": 5.0,
+            "duration": 4200.0
+        },
+        "Fortify Restoration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Scaly Pholiota": {
+        "Gradual Restore Stamina": {
+            "magnitude": 19.0,
+            "duration": 4200.0
+        },
+        "Magic Weakness Oil": {
+            "magnitude": 16.0,
+            "duration": 10.0
+        },
+        "Fortify Carry Weight": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        },
+        "Fortify Illusion": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Scathecraw": {
+        "Etiolating Oil": {
+            "magnitude": 18.0,
+            "duration": 30.0
+        },
+        "Damage Maximum Health": {
+            "magnitude": 10.0,
+            "duration": 30.0
+        },
+        "Lingering Damage Health": {
+            "magnitude": 2.5,
+            "duration": 30.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 3.0
+        }
+    },
+    "Silverside Perch": {
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Vulnerability": {
+            "magnitude": 12.0,
+            "duration": 30.0
+        },
+        "Damage Maximum Health": {
+            "magnitude": 10.0,
+            "duration": 30.0
+        },
+        "Resist Frost": {
+            "magnitude": 3.0,
+            "duration": 60.0
+        }
+    },
+    "Skeever Tail": {
+        "Damage Health": {
+            "magnitude": 12.0,
+            "duration": 1.0
+        },
+        "Vulnerability": {
+            "magnitude": 12.0,
+            "duration": 30.0
+        },
+        "Damage Maximum Health": {
+            "magnitude": 8.0,
+            "duration": 30.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.0,
+            "duration": 180.0
+        }
+    },
+    "Slaughterfish Egg": {
+        "Constitution": {
+            "magnitude": 8.0,
+            "duration": 300.0
+        },
+        "Fortify Stamina": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Fortify Dexterity": {
+            "magnitude": 5.0,
+            "duration": 60.0
+        },
+        "Lingering Damage Health": {
+            "magnitude": 2.5,
+            "duration": 30.0
+        }
+    },
+    "Slaughterfish Scales": {
+        "Fortify Block": {
+            "magnitude": 5.0,
+            "duration": 180.0
+        },
+        "Resist Frost": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.6,
+            "duration": 180.0
+        },
+        "Lingering Damage Health": {
+            "magnitude": 2.0,
+            "duration": 30.0
+        }
+    },
+    "Small Antlers": {
+        "Arcane Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Damage Health": {
+            "magnitude": 12.0,
+            "duration": 1.0
+        },
+        "Fortify Restoration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Weakness to Poison Oil": {
+            "magnitude": 1.0,
+            "duration": 30.0
+        }
+    },
+    "Small Pearl": {
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Fortify Restoration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Resist Frost": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Fortify One - Handed": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        }
+    },
+    "Snowberries": {
+        "Gradual Restore Stamina": {
+            "magnitude": 16.0,
+            "duration": 4200.0
+        },
+        "Resist Fire": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Resist Frost": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Resist Shock": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        }
+    },
+    "Spawn Ash": {
+        "Etiolating Oil": {
+            "magnitude": 22.5,
+            "duration": 30.0
+        },
+        "Fortify Illusion": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Resist Fire": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 2.0
+        }
+    },
+    "Spider Egg": {
+        "Chilling Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Fortify Marksman": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        },
+        "Impairment": {
+            "magnitude": 1.75,
+            "duration": 20.0
+        },
+        "Fortify Lockpicking": {
+            "magnitude": 0.4,
+            "duration": 30.0
+        }
+    },
+    "Spriggan Sap": {
+        "Fortify Alteration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Fortify Illusion": {
+            "magnitude": 3.0,
+            "duration": 60.0
+        },
+        "Fortify Restoration": {
+            "magnitude": 3.0,
+            "duration": 60.0
+        },
+        "Impairment": {
+            "magnitude": 2.25,
+            "duration": 20.0
+        }
+    },
+    "Strange Remains": {
+        "Resist Shock": {
+            "magnitude": 4.8,
+            "duration": 240.0
+        },
+        "Fortify Destruction": {
+            "magnitude": 4.5,
+            "duration": 300.0
+        },
+        "Invisibility": {
+            "magnitude": 0.0,
+            "duration": 60.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 10.0
+        }
+    },
+    "Swamp Fungal Pod": {
+        "Healing": {
+            "magnitude": 110.0,
+            "duration": 20.0
+        },
+        "Shocking Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Damage Health": {
+            "magnitude": 13.0,
+            "duration": 1.0
+        },
+        "Resist Shock": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        }
+    },
+    "Taproot": {
+        "Magicka": {
+            "magnitude": 48.0,
+            "duration": 15.0
+        },
+        "Magic Weakness Oil": {
+            "magnitude": 16.0,
+            "duration": 10.0
+        },
+        "Gradual Regenerate Magicka": {
+            "magnitude": 6.0,
+            "duration": 4200.0
+        },
+        "Fortify Illusion": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    },
+    "Thistle Branch": {
+        "Constitution": {
+            "magnitude": 8.0,
+            "duration": 300.0
+        },
+        "Resist Frost": {
+            "magnitude": 4.0,
+            "duration": 240.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.0,
+            "duration": 180.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 4.0
+        }
+    },
+    "Torchbug Thorax": {
+        "Shocking Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Magic Weakness Oil": {
+            "magnitude": 16.0,
+            "duration": 10.0
+        },
+        "Recuperation": {
+            "magnitude": 16.0,
+            "duration": 30.0
+        },
+        "Fortify Stamina": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        }
+    },
+    "Trama Root": {
+        "Tardiness": {
+            "magnitude": 50.0,
+            "duration": 5.0
+        },
+        "Weakness to Shock": {
+            "magnitude": 24.0,
+            "duration": 10.0
+        },
+        "Burning Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Fortify Carry Weight": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        }
+    },
+    "Troll Fat": {
+        "Damage Health": {
+            "magnitude": 12.0,
+            "duration": 1.0
+        },
+        "Frenzy": {
+            "magnitude": 11.0,
+            "duration": 10.0
+        },
+        "Constitution": {
+            "magnitude": 8.0,
+            "duration": 300.0
+        },
+        "Fortify Two - Handed": {
+            "magnitude": 3.75,
+            "duration": 180.0
+        }
+    },
+    "Tundra Cotton": {
+        "Fortify Magicka": {
+            "magnitude": 6.4,
+            "duration": 600.0
+        },
+        "Fortify Block": {
+            "magnitude": 5.0,
+            "duration": 180.0
+        },
+        "Resist Magic": {
+            "magnitude": 2.8,
+            "duration": 180.0
+        },
+        "Fortify Barter": {
+            "magnitude": 2.0,
+            "duration": 30.0
+        }
+    },
+    "Vampire Dust": {
+        "Cleansing": {
+            "magnitude": 5.0,
+            "duration": 0.0
+        },
+        "Fortify Unarmed": {
+            "magnitude": 5.0,
+            "duration": 180.0
+        },
+        "Invisibility": {
+            "magnitude": 0.0,
+            "duration": 20.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 7.0
+        }
+    },
+    "Venomous Spittle": {
+        "Arcane Oil": {
+            "magnitude": 20.75,
+            "duration": 15.0
+        },
+        "Damage Health": {
+            "magnitude": 18.0,
+            "duration": 1.0
+        },
+        "Lingering Damage Health": {
+            "magnitude": 2.5,
+            "duration": 30.0
+        },
+        "Paralysis": {
+            "magnitude": 0.0,
+            "duration": 1.0
+        }
+    },
+    "Void Salts": {
+        "Weakness to Shock": {
+            "magnitude": 32.0,
+            "duration": 10.0
+        },
+        "Fortify Magicka": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        },
+        "Resist Shock": {
+            "magnitude": 4.8,
+            "duration": 300.0
+        },
+        "Resist Magic": {
+            "magnitude": 3.2,
+            "duration": 300.0
+        }
+    },
+    "Wheat": {
+        "Healing": {
+            "magnitude": 100.0,
+            "duration": 20.0
+        },
+        "Shocking Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Vulnerability": {
+            "magnitude": 12.0,
+            "duration": 30.0
+        },
+        "Fortify Health": {
+            "magnitude": 3.2,
+            "duration": 600.0
+        }
+    },
+    "White Cap": {
+        "Magicka": {
+            "magnitude": 45.0,
+            "duration": 15.0
+        },
+        "Etiolating Oil": {
+            "magnitude": 22.5,
+            "duration": 30.0
+        },
+        "Weakness to Frost": {
+            "magnitude": 10.0,
+            "duration": 10.0
+        },
+        "Resist Projectiles": {
+            "magnitude": 3.0,
+            "duration": 180.0
+        }
+    },
+    "Wisp Wrappings": {
+        "Fortify Carry Weight": {
+            "magnitude": 8.0,
+            "duration": 600.0
+        },
+        "Fortify Destruction": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        },
+        "Resist Magic": {
+            "magnitude": 3.6,
+            "duration": 180.0
+        },
+        "Soul Trap Oil": {
+            "magnitude": 0.0,
+            "duration": 5.0
+        }
+    },
+    "Wolf Heart": {
+        "Burning Oil": {
+            "magnitude": 17.5,
+            "duration": 15.0
+        },
+        "Chilling Oil": {
+            "magnitude": 14.0,
+            "duration": 15.0
+        },
+        "Frenzy": {
+            "magnitude": 11.0,
+            "duration": 10.0
+        },
+        "Damage Health": {
+            "magnitude": 10.0,
+            "duration": 1.0
+        }
+    },
+    "Yellow Mountain Flower": {
+        "Vulnerability": {
+            "magnitude": 12.0,
+            "duration": 30.0
+        },
+        "Constitution": {
+            "magnitude": 8.0,
+            "duration": 300.0
+        },
+        "Fortify Health": {
+            "magnitude": 4.8,
+            "duration": 600.0
+        },
+        "Fortify Restoration": {
+            "magnitude": 4.0,
+            "duration": 180.0
+        }
+    }
+}
