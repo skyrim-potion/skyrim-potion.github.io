@@ -247,6 +247,7 @@ const Ingredient = (n, other_ingredients_states, selected_ingredient_state, onch
         } else {
             res = Object.keys(effects);
         }
+        res.sort();
         res.unshift('');
         return res.map(e => option({ value: e }, e));
     });
