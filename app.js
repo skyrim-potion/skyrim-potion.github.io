@@ -359,7 +359,14 @@ const PotionsTable = (effects_submitted) => () => {
 
     var rows = [];
     for (const candidate of candidates) {
-        var cells = [td(Object.keys(candidate).join(' + '))];
+        var ingredients = [];
+        for (const ingredient of Object.keys(candidate)) {
+            if (ingredients.length > 0) {
+                ingredients.push(span(' + '));
+            }
+            ingredients.push(span({ title: ingredient_info_string(ingredient) }, ingredient));
+        }
+        var cells = [td(ingredients)];
         for (const effect of effects_submitted.val) {
             var mag = 0, dur = 0, mag_i = '', dur_i = '';
             for (const [i, effects] of Object.entries(candidate)) {
