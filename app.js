@@ -406,8 +406,8 @@ const PotionsTable = (effects_submitted) => () => {
             const offset = sort_by_type == 'mag' ? 0 : 1;
             const effect_index = effects_submitted.val.indexOf(sort_by_val);
             const index = 1 + effect_index * 2 + offset;
-            const lc = Number(l.children[index].innerHTML);
-            const rc = Number(r.children[index].innerHTML);
+            const lc = Number(l.children[index]?.innerHTML ?? 0);
+            const rc = Number(r.children[index]?.innerHTML ?? 0);
             const comp_res = lc < rc ? -1 : 1;
             return sort_ord == 'DESC' ? comp_res * -1 : comp_res;
         });
