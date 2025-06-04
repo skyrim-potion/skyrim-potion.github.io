@@ -7,6 +7,10 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
 #ingredients {
     table-layout: fixed;
     width: 100%;
@@ -16,8 +20,16 @@ h1 {
     text-align: center;
 }
 
+#ingredients td {
+    width: 100%;
+}
+
+#ingredients td button {
+    width: 8%;
+}
+
 #ingredients select {
-    width: 100%
+    width: 90%;
 }
 
 #ingredients table {

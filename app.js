@@ -1,6 +1,6 @@
 import data from './data.json' with { type: 'json' };
 
-const { div, h1, option, select, table, thead, tbody, td, th, tr } = van.tags
+const { a, button, div, h1, h3, option, select, span, table, thead, tbody, td, th, tr } = van.tags
 
 const ASSERT_ON = true
 
@@ -227,11 +227,11 @@ const Ingredient = (n, other_ingredients_states, selected_ingredient_state, onch
 
     const filtered_ingredients = vderive(() =>
         none_or_filtered_ingredients(other_ingredients_states.map((i) => i.val), effect_filter.val)
-            .map((i) => option({ title: ingredient_info_string(i) }, i)));
+            .map(i => option({ title: ingredient_info_string(i), selected: () => selected_ingredient_state.val == i }, i)));
 
     const ingredient_select = () => select({
-        oninput: (e) => { onchange(e), selected_ingredient_state.val = e.target.value },
-        title: vderive(() => ingredient_info_string(selected_ingredient_state.val)),
+        oninput: e => { onchange(e), selected_ingredient_state.val = e.target.value },
+        title: vderive(() => ingredient_info_string(selected_ingredient_state.val))
     }, filtered_ingredients.val);
 
     const effect_filter_options = vderive(() => {
@@ -267,14 +267,21 @@ const Ingredient = (n, other_ingredients_states, selected_ingredient_state, onch
     const should_be_empty = vderive(() => other_ingredients_states.length > 0 &&
         other_ingredients_states.some((i) => i.val == ''));
 
+    const remove_ingredient = () => selected_ingredient_state.val != '' ?
+        button({
+            title: 'Remove ingredient',
+            onclick: () => { onchange(), selected_ingredient_state.val = ''; }
+        }, 'X') :
+        span();
+
     return () => should_be_empty.val ? tr(td(), td(), td()) : tr(
-        td(ingredient_select),
+        td(ingredient_select, ' ', remove_ingredient),
         td(effect_select),
         td(potion_effects),
     );
 };
 
-const App = () => {
+const IngredientsToPotion = (mode) => {
     const ingredient1 = vstate('');
     const ingredient2 = vstate('');
     const ingredient3 = vstate('');
@@ -288,6 +295,7 @@ const App = () => {
     const ingredient_table = vderive(() => {
         return div(
             h1("Ingredients Selection"),
+            h3(a({ onclick: () => mode.val = 'effects' }, 'Switch to Effects Selection')),
             table({ id: 'ingredients' },
                 thead(
                     tr(th('Ingredient'), th({ title: 'Filters the Ingredients by effect' }, 'Effect Filter'), th('Effects (Name, Magnitude, Duration)'))
@@ -315,9 +323,217 @@ const App = () => {
         );
     });
 
+    return div(ingredient_table, effects_div);
+}
+
+/**
+ * @param {n} number
+ * @param {Van<string[]>} effects_selected
+ */
+const EffectSelector = (n, effects_selected, reset) => {
+
+    const selected = vstate(false);
+
+    const options = vderive(() => {
+        var options = Object.keys(effects)
+            .filter(e => !effects_selected.val.includes(e));
+        options.sort();
+        options.unshift('');
+        return options.map(s => option({ value: s }, s));
+    });
+
+    const reset_effects = () => {
+        reset();
+        if (selected.val == true) {
+            var new_effects_selected = effects_selected.val;
+            while (new_effects_selected.length > n) new_effects_selected.pop();
+            effects_selected.val = new_effects_selected;
+        }
+        selected.val = false;
+    };
+
+    const effect_selector = select({
+        onchange: e => {
+            reset_effects();
+            if (e.target.value != '') {
+                effects_selected.val = effects_selected.val.concat(e.target.value);
+                selected.val = true;
+            }
+        }
+    }, options.val);
+
+    const remove_effect = () => selected.val != '' ?
+        button({
+            title: 'Remove effect',
+            onclick: () => { reset_effects(); effect_selector.value = ''; }
+        }, 'X') :
+        span();
+
+    return div(
+        div("Effect: ", effect_selector, ' ', remove_effect),
+        () => selected.val != '' ? EffectSelector(n + 1, effects_selected, reset) : div(),
+    );
+}
+
+const Effects = (mode, effects) => {
+
+    const effects_selected = vstate([]);
+
+    return div(
+        h1("Effects Selection"),
+        h3(a({ onclick: () => mode.val = 'ingredients' }, 'Switch to Ingredients Selection')),
+        EffectSelector(0, effects_selected, () => effects.val = []),
+        button({ onclick: () => { effects.val = effects_selected.val } }, 'Find Potions'),
+    );
+}
+
+/** @param {Van<string[]>} effects_submitted */
+const PotionsTable = (effects_submitted) => () => {
+    if (effects_submitted.val.length == 0) {
+        return div();
+    }
+
+    var candidates = [];
+    for (const effect of effects_submitted.val) {
+        const ingredients = effects[effect];
+        if (candidates.length == 0) {
+            for (let i = 0; i < ingredients.length; i++) {
+                for (let j = i + 1; j < ingredients.length; j++) {
+                    candidates.push({
+                        [ingredients[i].ingredient]: {
+                            [effect]: {
+                                magnitude: ingredients[i].magnitude,
+                                duration: ingredients[i].duration,
+                            }
+                        },
+                        [ingredients[j].ingredient]: {
+                            [effect]: {
+                                magnitude: ingredients[j].magnitude,
+                                duration: ingredients[j].duration,
+                            }
+                        },
+                    });
+                }
+            }
+        } else {
+            var old_candidates = candidates;
+            candidates = [];
+            for (const candidate of old_candidates) {
+                const matches = ingredients.filter(i => i.ingredient in candidate);
+
+                for (const match of matches) {
+                    candidate[match.ingredient][effect] = {
+                        magnitude: match.magnitude,
+                        duration: match.duration,
+                    }
+                }
+
+                // the effect is already in candidate
+                if (matches.length >= 2) {
+                    candidates.push(candidate_clone);
+                    continue;
+                }
+
+                if (matches.length < 1) continue;
+
+                // only one ingredient in candidate has the effect, we need to find another one but
+                // only if candidate has less than 3 ingredients
+                if (candidate.length >= 3) continue;
+
+                for (const ingredient of ingredients) {
+                    if (!(ingredient.ingredient in candidate)) {
+                        const candidate_clone = structuredClone(candidate);
+                        candidate_clone[ingredient.ingredient] = {
+                            [effect]: {
+                                magnitude: ingredient.magnitude,
+                                duration: ingredient.duration,
+                            }
+                        };
+                        candidates.push(candidate_clone);
+                    }
+                }
+            }
+        }
+    }
+
+
+    // TODO: first collect so you can sort
+
+    var sort_by = vstate(['ingredients', '', 'ASC']);
+
+    var rows = [];
+    for (const candidate of candidates) {
+        var cells = [td(Object.keys(candidate).join(' + '))];
+        for (const effect of effects_submitted.val) {
+            var mag = 0, dur = 0;
+            for (const [_, effects] of Object.entries(candidate)) {
+                mag = Math.max(mag, effects[effect]?.magnitude ?? 0);
+                dur = Math.max(dur, effects[effect]?.duration ?? 0);
+            }
+            cells.push(td({ title: `${effect} magnitude` }, mag));
+            cells.push(td({ title: `${effect} duration` }, dur));
+        }
+        rows.push(tr(cells));
+    }
+
+    const sort_ord_reverse = (sort_ord) => sort_ord == 'DESC' ? 'ASC' : 'DESC';
+
+    const sort_onclick = (sort_by_type, sort_by_val, sort_ord_default) => () => {
+        const new_sort_ord = sort_by.val[0] == sort_by_type && sort_by.val[1] == sort_by_val ? sort_ord_reverse(sort_by.val[2]) : sort_ord_default;
+        sort_by.val = [sort_by_type, sort_by_val, new_sort_ord];
+    };
+
+    const sort_icon = (sort_by_type, sort_by_val) => () =>
+        sort_by.val[0] == sort_by_type && sort_by.val[1] == sort_by_val ? (sort_by.val[2] == 'DESC' ? '▼' : '▲') : '▽';
+
+    const body = () => {
+        const [sort_by_type, sort_by_val, sort_ord] = sort_by.val;
+        // console.log(`Sort by ${sort_by_type} ${sort_by_val}`);
+        var sorted_rows = rows.toSorted((l, r) => {
+            if (sort_by_type == 'ingredients') {
+                const comp_res = l.children[0].innerHTML.localeCompare(r.children[0].innerHTML);
+                return sort_ord == 'DESC' ? comp_res * -1 : comp_res;
+            }
+            const offset = sort_by_type == 'mag' ? 0 : 1;
+            const effect_index = effects_submitted.val.indexOf(sort_by_val);
+            const index = 1 + effect_index * 2 + offset;
+            const lc = Number(l.children[index].innerHTML);
+            const rc = Number(r.children[index].innerHTML);
+            const comp_res = lc < rc ? -1 : 1;
+            return sort_ord == 'DESC' ? comp_res * -1 : comp_res;
+        });
+        sorted_rows.unshift(tr([td()].concat(effects_submitted.val.flatMap(e => [
+            td('mag ', span({ onclick: sort_onclick('mag', e, 'DESC'), title: `Sort by ${e} magnitude` }, sort_icon('mag', e))),
+            td('dur ', span({ onclick: sort_onclick('dur', e, 'DESC'), title: `Sort by ${e} duration` }, sort_icon('dur', e)))]))
+        ));
+        return tbody(sorted_rows);
+    };
+
+    return div(
+        table(
+            thead(
+                tr([th('Ingredients ',
+                    span({ onclick: sort_onclick('ingredients', '', 'ASC'), title: 'Sort by Ingredients' }, sort_icon('ingredients', '')))]
+                    .concat(effects_submitted.val.map(e => th({ colspan: 2 }, e))))
+            ),
+            body,
+        )
+    );
+}
+
+const EffectsToPotions = (mode) => {
+    const effects = vstate([]);
+
+    return div(Effects(mode, effects), PotionsTable(effects));
+}
+
+const App = () => {
+
+    const mode = vstate('ingredients');
+
     return div({ class: "app" },
-        ingredient_table,
-        effects_div,
+        () => mode.val == 'ingredients' ? IngredientsToPotion(mode) : div(),
+        () => mode.val == 'effects' ? EffectsToPotions(mode) : div(),
     );
 };
 
