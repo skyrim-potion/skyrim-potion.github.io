@@ -326,7 +326,7 @@ const PotionsTable = (effects_submitted) => () => {
 
                 // the effect is already in candidate
                 if (matches.length >= 2) {
-                    candidates.push(candidate_clone);
+                    candidates.push(structuredClone(candidate));
                     continue;
                 }
 
