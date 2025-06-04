@@ -26,106 +26,6 @@ const vstate = (t) => van.state(t)
  */
 const vderive = (f) => van.derive(f)
 
-function assert(condition, message) {
-    if (ASSERT_ON && !condition) throw new Error(message || "Assertion failed")
-}
-
-function assert_eq(fst, snd) {
-    assert(fst.toString() === snd.toString(), `"${fst}" != "${snd}"`)
-}
-
-/**
- * @template T
- * @template E
- */
-class Result {
-    /** @type {T} */
-    #ok
-    /** @type {E} */
-    #err
-    /**
-     * @param {T} ok 
-     * @param {E} err
-     */
-    constructor(ok, err) {
-        if ((ok == null && err == null) || (ok != null && err != null)) {
-            throw new Error('Result should be either ok or error')
-        }
-        this.#ok = ok
-        this.#err = err
-    }
-
-    toString = () => this.map_or_else(e => `Err(${e})`, o => `Ok(${o})`);
-
-    /**
-     * @template T
-     * @param {T} ok
-     * @return {Result<T, null>}
-     */
-    static ok(ok) { return new Result(ok, null) }
-
-    /**
-     * @template E
-     * @param {E} err
-     * @return {Result<null, E>}
-     */
-    static err = err => new Result(null, err)
-
-    /** @return {boolean} */
-    is_ok = () => this.#ok != null
-
-    /** @return {boolean} */
-    is_err = () => this.#err != null
-
-    /**
-     * @param {T} def
-     * @returns {T}
-     */
-    get_or = def => this.is_ok() ? this.#ok : def;
-
-    /**
-     * @param {E} def
-     * @returns {E}
-     */
-    get_err_or = def => this.is_err() ? this.#err : def;
-
-    /**
-     * @returns {T}
-     */
-    get_or_throw() {
-        if (this.is_err()) throw new Error(this.#err)
-        return this.#ok
-    }
-
-    /**
-     * @return {E}
-     */
-    get_err_or_throw() {
-        if (this.is_ok()) throw new Error('This Result is an ok and not an error!')
-        return this.#err
-    }
-
-    /**
-     * @template U
-     * @param {function(E): U} fe
-     * @param {function(T): U} ft
-     * @return {U}
-     */
-    map_or_else(fe, ft) {
-        return this.#ok == null ? fe(this.#err) : ft(this.#ok);
-    }
-}
-
-{
-    assert(Result.ok(1).is_ok())
-    assert(!Result.ok(1).is_err())
-    assert(Result.err('e').is_err())
-    assert(!Result.err('e').is_ok())
-    assert(Result.ok(1).get_or(2) == 1)
-    assert(Result.ok(1).get_or_throw('e') == 1)
-    assert(Result.err(1).get_or(2) == 2)
-}
-
 /**
  * @typedef {Object} EffectMagnitudeDuration
  * @property {string} effect 
@@ -286,8 +186,6 @@ const IngredientsToPotion = (mode) => {
     const ingredient2 = vstate('');
     const ingredient3 = vstate('');
 
-    vderive(() => console.log(ingredient1, ingredient2, ingredient3));
-
     const ingredient1form = Ingredient('1', [], ingredient1, () => { ingredient3.val = ''; ingredient2.val = '' });
     const ingredient2form = Ingredient('2', [ingredient1], ingredient2, () => ingredient3.val = '');
     const ingredient3form = Ingredient('3', [ingredient1, ingredient2], ingredient3, () => { });
@@ -344,11 +242,9 @@ const EffectSelector = (n, effects_selected, reset) => {
 
     const reset_effects = () => {
         reset();
-        if (selected.val == true) {
-            var new_effects_selected = effects_selected.val;
-            while (new_effects_selected.length > n) new_effects_selected.pop();
-            effects_selected.val = new_effects_selected;
-        }
+        var new_effects_selected = structuredClone(effects_selected.val);
+        while (new_effects_selected.length > n) new_effects_selected.pop();
+        effects_selected.val = new_effects_selected;
         selected.val = false;
     };
 
@@ -383,7 +279,7 @@ const Effects = (mode, effects) => {
         h1("Effects Selection"),
         h3(a({ onclick: () => mode.val = 'ingredients' }, 'Switch to Ingredients Selection')),
         EffectSelector(0, effects_selected, () => effects.val = []),
-        button({ onclick: () => { effects.val = effects_selected.val } }, 'Find Potions'),
+        vderive(() => effects_selected.val.length == 0 ? div() : button({ onclick: () => { effects.val = effects_selected.val } }, 'Find Potions')),
     );
 }
 
