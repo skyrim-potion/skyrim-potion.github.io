@@ -361,13 +361,19 @@ const PotionsTable = (effects_submitted) => () => {
     for (const candidate of candidates) {
         var cells = [td(Object.keys(candidate).join(' + '))];
         for (const effect of effects_submitted.val) {
-            var mag = 0, dur = 0;
-            for (const [_, effects] of Object.entries(candidate)) {
-                mag = Math.max(mag, effects[effect]?.magnitude ?? 0);
-                dur = Math.max(dur, effects[effect]?.duration ?? 0);
+            var mag = 0, dur = 0, mag_i = '', dur_i = '';
+            for (const [i, effects] of Object.entries(candidate)) {
+                if (mag < effects[effect]?.magnitude ?? 0) {
+                    mag = effects[effect]?.magnitude;
+                    mag_i = i;
+                }
+                if (dur < effects[effect]?.duration ?? 0) {
+                    dur = effects[effect]?.duration;
+                    dur_i = i;
+                }
             }
-            cells.push(td({ title: `${effect} magnitude` }, mag));
-            cells.push(td({ title: `${effect} duration` }, dur));
+            cells.push(td({ title: `${effect} magnitude (${mag_i})` }, mag));
+            cells.push(td({ title: `${effect} duration (${dur_i})` }, dur));
         }
         rows.push(tr(cells));
     }
